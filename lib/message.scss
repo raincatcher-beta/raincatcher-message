@@ -1,0 +1,42 @@
+
+.messages{
+  .md-avatar{
+    margin-top: 0!important;
+  }
+  .md-list-item-text{
+    position: relative;
+  }
+  .new{
+    h3{
+      font-weight: bold!important;
+    }
+  }
+  .time-stamp{
+    line-height: normal;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $secondary-text-color;
+  }
+  md-list-item md-divider[md-inset] {
+    left: 72px;
+    width: calc(100% - 72px);
+  }
+}
+
+.message-header{
+  position: relative;
+  margin: 10px 0;
+  color: $secondary-text-color;
+  .time-stamp{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.wfm-portal{
+  .message-header{
+    line-height: 32px;
+  }
+}

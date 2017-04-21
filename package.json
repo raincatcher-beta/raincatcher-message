@@ -1,0 +1,100 @@
+{
+  "name": "fh-wfm-message",
+  "version": "0.1.3",
+  "description": "An message module for WFM",
+  "main": "lib/angular/message-ng.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feedhenry-raincatcher/raincatcher-message.git"
+  },
+  "scripts": {
+    "build": "wfm-template-build -m 'wfm.message.directives'",
+    "watch": "wfm-template-build -w -m 'wfm.message.directives'",
+    "test": "grunt"
+  },
+  "keywords": [
+    "wfm",
+    "message"
+  ],
+  "author": {
+    "name": "Brian Leathem"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angular-messages": "1.5.3",
+    "express": "4.15.2",
+    "fh-wfm-mediator": "0.3.3",
+    "lodash": "4.17.4",
+    "moment": "^2.15.1",
+    "ng-feedhenry": "0.3.0",
+    "q": "1.4.1",
+    "shortid": "^2.2.6",
+    "string-template": "^1.0.0"
+  },
+  "devDependencies": {
+    "body-parser": "1.15.0",
+    "chai": "^3.5.0",
+    "fh-wfm-template-build": "0.2.1",
+    "grunt": "1.0.1",
+    "grunt-eslint": "18.0.0",
+    "grunt-mocha-test": "0.13.2",
+    "load-grunt-tasks": "3.5.2",
+    "mocha": "3.2.0",
+    "request": "2.69.0",
+    "should": "8.3.0",
+    "sinon": "1.17.6",
+    "sinon-as-promised": "4.0.2",
+    "proxyquire": "1.7.4"
+  },
+  "gitHead": "16f5fd60bb0e9aa83df2f364cce12df8db4be451",
+  "bugs": {
+    "url": "https://github.com/feedhenry-raincatcher/raincatcher-message/issues"
+  },
+  "homepage": "https://github.com/feedhenry-raincatcher/raincatcher-message#readme",
+  "_id": "fh-wfm-message@0.1.3",
+  "_shasum": "c3a528c6d625e6c01ffc84c39b2a4daa78df641d",
+  "_from": "fh-wfm-message@latest",
+  "_npmVersion": "2.15.10",
+  "_nodeVersion": "4.6.0",
+  "_npmUser": {
+    "name": "grdryn",
+    "email": "gryan@redhat.com"
+  },
+  "dist": {
+    "shasum": "c3a528c6d625e6c01ffc84c39b2a4daa78df641d",
+    "tarball": "https://registry.npmjs.org/fh-wfm-message/-/fh-wfm-message-0.1.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "emilioicai",
+      "email": "emiliorodriguez@gmail.com"
+    },
+    {
+      "name": "feedhenry",
+      "email": "npm@feedhenry.com"
+    },
+    {
+      "name": "feedhenry-dev",
+      "email": "npm@feedhenry.com"
+    },
+    {
+      "name": "grdryn",
+      "email": "gryan@redhat.com"
+    },
+    {
+      "name": "jbriones",
+      "email": "jbriones@redhat.com"
+    },
+    {
+      "name": "sebastienblanc",
+      "email": "scm.blanc@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/fh-wfm-message-0.1.3.tgz_1492075870366_0.9978567706421018"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/fh-wfm-message/-/fh-wfm-message-0.1.3.tgz",
+  "readme": "ERROR: No README data found!"
+}

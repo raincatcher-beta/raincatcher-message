@@ -1,0 +1,51 @@
+<md-toolbar class="content-toolbar md-primary">
+  <div class="md-toolbar-tools">
+    <h3>New message</h3>
+  </div>
+</md-toolbar>
+<div class="wfm-maincol-scroll">
+
+<form name="messageForm" ng-submit="ctrl.done(messageForm.$valid)" novalidate layout-padding layout-margin>
+  <!--
+  <md-input-container>
+    <label for="messageState">Status</label>
+    <input type="text" id="inputmessageType" name="messageStatus" ng-model="ctrl.model.status" disabled="true">
+  </md-input-container>
+  -->
+<div>
+  <md-input-container class="md-block" ng-class="{ 'has-error' : messageForm.receiver.$invalid && !messageForm.receiver.$pristine }">
+    <label for="selectReceiver">To</label>
+    <md-select ng-model="ctrl.model.receiver" name="receiver" id="selectReceiver" required>
+       <md-option ng-repeat="worker in ctrl.workers" value="{{worker}}">{{worker.name}} ({{worker.position}})</md-option>
+     </md-select>
+     <div ng-messages="messageForm.receiver.$error" ng-if="ctrl.submitted || messageForm.receiver.$dirty">
+       <div ng-message="required">The To: field is required.</div>
+     </div>
+  </md-input-container>
+</div>
+
+<div>
+  <md-input-container class="md-block" ng-class="{ 'has-error' : messageForm.subject.$invalid && !messageForm.subject.$pristine }">
+    <label for="inputSubject">Subject</label>
+    <input type="text" id="inputSubject" name="subject" ng-model="ctrl.model.subject" required>
+    <div ng-messages="messageForm.subject.$error" ng-if="ctrl.submitted || messageForm.subject.$dirty">
+      <div ng-message="required">A subject is required.</div>
+    </div>
+  </md-input-container>
+</div>
+
+<div>
+  <md-input-container class="md-block" ng-class="{ 'has-error' : messageForm.content.$invalid && !messageForm.content.$pristine }">
+    <label for="inputContent">Message</label>
+    <textarea id="inputContent" name="content" ng-model="ctrl.model.content" required md-maxlength="350"></textarea>
+
+    <div ng-messages="messageForm.content.$error" ng-show="ctrl.submitted || messageForm.content.$dirty">
+      <div ng-message="required">Message content is required.</div>
+    </div>
+  </md-input-container>
+</div>
+
+  <md-button type="submit" class="md-raised md-primary">Send message</md-button>
+</form>
+
+</div>

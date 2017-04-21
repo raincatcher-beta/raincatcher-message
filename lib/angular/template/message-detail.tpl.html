@@ -1,0 +1,31 @@
+<md-toolbar class="content-toolbar">
+  <div class="md-toolbar-tools">
+    <md-button ng-click="ctrl.closeMessage($event, ctrl.message)" hide-gt-sm class="md-icon-button">
+      <md-icon aria-label="Close" md-font-set="material-icons">close</md-icon>
+    </md-button>
+    <h3>
+     {{ctrl.message.subject}}
+    </h3>
+  </div>
+</md-toolbar>
+<div class="wfm-maincol-scroll">
+  <div class="message" layout-padding layout-margin>
+
+    <div class="message-header">
+      <div class="md-body-1">
+        <span>From:</span> {{ctrl.message.sender.name}}
+      </div>
+      <div class="md-body-1">
+        <span>To:</span> {{ctrl.message.receiver.name}}
+      </div>
+      <div class="md-body-1">
+        <span>Status:</span> {{ctrl.message.status}}
+      </div>
+      <!--<div class="md-body-1 time-stamp">11:38 AM (3 hours ago)</div>-->
+    </div>
+
+    <md-divider></md-divider>
+
+    <p class="md-body-1">{{ctrl.message.content}}</p>
+  </div>
+</div>
