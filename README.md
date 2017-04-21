@@ -1,5 +1,7 @@
 # FeedHenry RainCatcher message [![Build Status](https://travis-ci.org/feedhenry-raincatcher/raincatcher-message.png)](https://travis-ci.org/feedhenry-raincatcher/raincatcher-message)
 
+**NOTE** - Module is no longer actively maintained by Raincatcher 
+
 This module contains a message model representation and its related services :
 - Backend services
 - Frontend services
